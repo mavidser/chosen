@@ -29,6 +29,8 @@ class @Chosen extends AbstractChosen
     @dropdown = @container.down('div.chosen-drop')
 
     @search_field = @container.down('input')
+    @search_field.attr('placeholder', @options.search_placeholder);
+    
     @search_results = @container.down('ul.chosen-results')
     this.search_field_scale()
 
