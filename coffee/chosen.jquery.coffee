@@ -51,6 +51,7 @@ class Chosen extends AbstractChosen
     @dropdown = @container.find('div.chosen-drop').first()
 
     @search_field = @container.find('input').first()
+    @search_field.attr('placeholder', @options.search_placeholder)
     @search_results = @container.find('ul.chosen-results').first()
     this.search_field_scale()
 
